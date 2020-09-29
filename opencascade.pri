@@ -5,6 +5,9 @@ defineReplace(sysPath) {
     return($$result)
 }
 
+CASCADE_INC_DIR=../oce73/include/opencascade  
+CASCADE_LIB_DIR=/home/xiaohl/Work/oce73/lib
+
 isEmpty(CASCADE_INC_DIR):CASCADE_INC_DIR = $$(CSF_OCCTIncludePath)
 isEmpty(CASCADE_LIB_DIR):CASCADE_LIB_DIR = $$(CSF_OCCTLibPath)
 
